@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-
+import { useFirestore } from 'vuefire'
+const db = useFirestore()
 defineProps({
   msg: String,
 })
